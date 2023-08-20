@@ -1,0 +1,40 @@
+DELIMITER //
+
+CREATE EVENT change_nab
+    ON SCHEDULE
+      EVERY 1 MINUTE
+    DO
+    BEGIN
+        DECLARE i INT(5);
+        SELECT MIN(DATEDIFF(CURDATE(), history_nab.tanggal)) INTO @min_difference FROM history_nab;
+        WHILE @min_difference > 1 DO
+            SET @min_difference = @min_difference - 1;
+            SET i = 0;
+            SELECT (CURDATE()-@min_difference) INTO @date;
+            SELECT COUNT(*) INTO @count_reksadana FROM reksadana;
+            WHILE i < @count_reksadana DO
+                SELECT reksadana.id INTO @id FROM reksadana ORDER BY id ASC LIMIT i, 1;
+                SELECT reksadana.nab INTO @nab FROM reksadana ORDER BY id ASC LIMIT i, 1;
+                SET @new_nab = @nab + (random(-500, 500)/100);
+                INSERT INTO history_nab VALUES(@id, @date, @nab);
+                UPDATE reksadana SET reksadana.nab = @new_nab WHERE reksadana.id = @id;
+                SET i = i + 1;
+            END WHILE;
+        END WHILE;
+    END //
+
+DELIMITER ;
+
+
+
+
+
+
+//view perkembangan
+SELECT history_nab.*, reksadana.reksadana FROM history_nab INNER JOIN reksadana ON history_nab.id_reksadana=reksadana.id
+UNION
+SELECT reksadana.id AS id_reksadana, CURDATE() AS tanggal, reksadana.nab, reksadana.reksadana FROM reksadana
+
+
+//select grafik perkembangan klien
+SELECT * FROM perkembangan WHERE perkembangan.id_reksadana = ? ORDER BY tanggal ASC

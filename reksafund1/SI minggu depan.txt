@@ -1,0 +1,26 @@
+hosting
+angket skpl
+anngket dengan rating 1-3 (angket nyaman, angket menarik), diatas ada nama, petunjuk pengisian, diisi 5 orang termasuk bu
+portability dicoba langsung
+uji coba respond time setiap halaman
+penjelasan enkripsi password
+
+
+
+//cek respond time
+<?php
+$url = 'reksafund.000webhostapp.com';
+$url .= $_SERVER['PHP_SELF'];
+4:17 PM 09-Apr-184:17 PM 09-Apr-18
+echo $url.'<br>';
+  if(!isset($url)) die("enter url");
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+  if(curl_exec($ch))
+  {
+  $info = curl_getinfo($ch);
+  echo 'Took ' . $info['total_time'] . ' seconds to transfer a request to ' . $info['url'];
+  }
+
+  curl_close($ch);
+?>
