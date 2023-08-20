@@ -1,0 +1,1 @@
+[03-Oct-2021 23:42:11 Asia/Jakarta] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/gadj9774/public_html/sekret/config/drivers/adodb-mysqli.inc.php on line 123

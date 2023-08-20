@@ -1,0 +1,16 @@
+tutuk lapdetail_del.php
+
+
+
+
+kurang lap_detail.php
+
+form sekret (placeholder, pattern, validasi
+cetak_kartu_santri.php -> POST -> cetak_kartu_santri_terpilih.php
+
+
+
+
+
+
+struktur div (navbar kiri, atas, container, dll)

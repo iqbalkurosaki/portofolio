@@ -1,0 +1,1 @@
+SELECT t_santri.nama, institusi.nama_institusi, t_santri.jurusan,t_santri.tgl_lahir,t_santri.tgl_masuk,komplek.nama_komplek FROM t_santri,institusi,komplek where  t_santri.last_update > '2020-09-09 00:00:00'and t_santri.id_status not like 'B' and t_santri.jurusan like '%inggris%' AND t_santri.profesi=institusi.id_institusi AND t_santri.id_komplek=komplek.id_komplek

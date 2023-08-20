@@ -1,0 +1,26 @@
+<tr>
+				<td width="4%" scope="col"><b>A4</td>
+				<td ><b>Berapa Kode Pos Anda ?</td>
+			</tr>
+			<tr><td width="4%" scope="col"></td><td >
+			 <!--kode_pos-->
+            <select id="kode_pos" name="kode_pos">
+                <option value="">Pilih Kode Pos</option>
+                <?php
+           
+				$sql = "SELECT * FROM kode_pos ORDER BY id_kodepos";
+				$result=$db->Execute($sql);
+				 while (!$result->EOF) {
+            	$id = $result->fields["id_kodepos"];
+				$kode_pos = $result->fields["kecamatan"];
+				?>
+                    <option value="<?php echo $id; ?>">
+                        <?php echo $id."-".$kode_pos;
+						?>
+                    </option>
+                <?php
+				$result->MoveNext();
+                }
+				?>
+            </select>
+			</td></tr>

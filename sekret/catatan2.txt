@@ -1,0 +1,12 @@
+- nama panggilan	--sudah
+- tambah field institusi di database t_santri	--sudah (perbaikan pemrosesan form --sudah, cek data -- sudah, lap_detail --belum, dll --belum)
+- kode pos otomatis bisa dirubah, input kecamatan, desa, dll 
+- foto not required	--sudah
+- laporan detail dibuat import excel
+- kartu santri : isinya nis, nama, kamar, alamat (kabupaten dan provinsi), foto, tandatangan (digeser ke kanan/dibawah foto), barcode nis disebelah kiri,
+- lapdetail edit (foto not required, dll seperti form sekret)	--sudah
+- kamar edit (input komplek dan nama kamar direadonly)
+- admin - kelas (tambah dan hapus kelas)
+- menu admin - status santri, kegiatan, pelanggaran dihapus
+- menu administrasi (bisa diakses dengan login atau tanpa login)
+- laporan - cek data (search: irfan, benar tidak ada scroll kanan tapi bablas layar)
