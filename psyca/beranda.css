@@ -1,0 +1,125 @@
+@font-face {
+  font-family: montserrat;
+  src: url('Montserrat-Regular.otf');
+}
+
+body {
+	margin: auto;
+}
+
+table {
+  margin-top: -24px;
+  width: 100%;
+}
+
+.gambar{
+  top: -19px;
+	height: auto;
+	width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  top: 10px;
+	margin-left: 20px;
+	width: 10%;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo2{
+	margin: 5% 30% auto;
+	text-align: center;
+	font-size: 400%;
+	color: white;
+	font-family: montserrat;
+  position: absolute;
+  z-index: 2;
+}
+
+.kata {
+	text-align: center;
+	font-size: 27px;
+	font-family: montserrat;
+}
+
+.kata a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 1s, font-size 1s ease-in-out;  
+}
+ 
+.kata a:hover,
+.kata a:focus {
+  color: white;
+  outline: none;
+  font-size: 38px;
+  -webkit-transition: color 1s, font-size 1s ease-in-out;
+}
+
+
+.footer {
+  color: white;
+  background-color: #474443;
+  height: 47px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 47px;
+  font-family: montserrat;
+  position: fixed;
+}
+
+.menu_bar {
+  top: 1%;
+  text-decoration: none;
+  color:white;
+  position: absolute;
+  display: block;
+  font-family: montserrat;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 375px){
+  .gambar{
+  height:200px;
+  width: 100%;
+  z-index: 1;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2{
+  margin: 15% 14% auto;
+  font-size: 180%;
+}
+
+  table {
+}
+
+.kata {
+  text-align: center;
+  font-size: 15px;
+  font-family: montserrat;
+}
+
+.kata a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 1s ease-in-out;  
+}
+ 
+.kata a:hover,
+.kata a:focus {
+  color: white;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: color 1s ease-in-out;
+}
+
+
+}
+

@@ -1,0 +1,82 @@
+@font-face {
+	font-family: montserrat;
+	src: url('Montserrat-Regular.otf');
+}
+
+body {
+	margin: auto;
+}
+
+nav {
+	top: 0px;
+	background-color: #474443;
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.logo {
+	margin-left: 20px;
+	float: left;
+	width: 32%;
+}
+
+.judul_artikel {
+	text-align: center;
+	font-size: 21px;
+}
+
+.artikel {
+	margin: 5% 24%;
+	width: 50%;
+	background-color: #fffaf0;
+	border: 3px solid black;
+	box-shadow: 4px 4px 7px;
+	text-align: justify;
+	font-size: 17px;
+	border-radius: 5px;
+	padding: 2%;
+}
+
+.footer {
+	left: 0px;
+	color: white;
+	background-color: #474443;
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-family: montserrat;
+}
+
+.menu_bar {
+	top: 33%;
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	font-family: montserrat;
+}
+
+@media only screen and (max-width: 375px){
+	.judul_artikel {
+	text-align: center;
+	font-size: 21px;
+	}
+
+	.artikel {
+	margin: 5% 5%;
+	margin-bottom: 20%;
+	width: 90%;
+	background-color: #fffaf0;
+	border: 3px solid black;
+	box-shadow: 4px 4px 7px;
+	text-align: justify;
+	font-size: 12px;
+	border-radius: 5px;
+	padding: 2%;
+	}
+}

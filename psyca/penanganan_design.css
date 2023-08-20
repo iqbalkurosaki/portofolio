@@ -1,0 +1,125 @@
+@font-face {
+	font-family: montserrat;
+	src: url('Montserrat-Regular.otf');
+}
+
+body {
+	margin: auto;
+}
+
+
+nav {
+	top: 0px;
+	position: fixed;
+	background-color: #474443;
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-left: 20px;
+	float: left;
+	width: 20%;
+}
+
+table {
+	margin-top: 2%;
+}
+
+.nomor {
+	width: 30px;
+	height: 30px;
+	border: 3px solid #87ceeb;
+	font-size: 25px;
+	padding: 15px;
+	border-radius: 50%;
+	text-align: center;
+	font-family: montserrat;
+}
+
+.deskripsi {
+	width: 700px;
+	font-family: montserrat;
+}
+
+.kata {
+	margin-top: 10%;
+	font-size: 40px;
+	font-family: montserrat;
+	margin-left: 43%;
+}
+
+.kata2 {
+	margin-top: 17%;
+	text-align: center;
+	color: red;
+	font-size: 25px;
+	border-radius: 5px;
+	line-height: 150px;
+	font-family: montserrat;
+}
+
+.kata2 a {
+	text-decoration: none;
+}
+
+.footer {
+	color: white;
+	background-color: #474443;
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-family: montserrat;
+}
+
+
+.menu_bar {
+  top: 30%;
+  text-decoration: none;
+  color:white;
+  position: absolute;
+  display: block;
+  font-family: montserrat;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 375px){
+	nav {
+		height: 50px;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.menu_bar {
+	  font-size: 15px;
+	  margin-right: 6%;
+	}
+
+	.kata {
+		margin-top: 20%;
+		font-size: 20px;
+		font-family: montserrat;
+		margin-left: 35%;
+	}
+
+	.nomor {
+	color: skyblue;
+	border: none;
+	font-size: 25px;
+	padding: 0px;
+	border-radius: 0px;
+	text-align: left;
+	}
+	
+	.deskripsi {
+	font-size: 13px;
+	padding-bottom: 4%;
+	}
+}

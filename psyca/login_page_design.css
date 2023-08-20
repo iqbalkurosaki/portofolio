@@ -1,0 +1,96 @@
+@font-face {
+	font-family: montserrat;
+	src: url('Montserrat-Regular.otf');
+}
+
+body {
+	margin: auto;
+}
+
+nav {
+	top: 0px;
+	background-color: #474443;
+	height: 70px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: fixed;
+}
+
+table {
+	margin-left: 32%;
+	margin-top: 15%;
+}
+
+.logo {
+	margin-left: 20px;
+	float: left;
+	width: 32%;
+}
+
+.input_data {
+	height: 30px;
+	width: 280px;
+}
+
+.submit_button {
+	height: 30px;
+	width: 200px;
+}
+
+.kata_login {
+	font-family: montserrat;
+	font-size: 20px;
+	padding-right: 50px;
+}
+
+.kata {
+	font-family: montserrat;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.kata2 {
+	font-family: montserrat;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer {
+	color: white;
+	background-color: #474443;
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-family: montserrat;
+}
+
+@media only screen and (max-width: 375px){
+	table {
+	margin-left: 0px;
+	margin-top: 60%;
+	}
+
+	.kata {
+	display: none;
+	}
+
+	.kata_login {
+	font-size: 12px;
+	padding-right: 5px;
+	}
+
+	.input_data {
+	width: 110%;
+	height: 20px;
+	}
+
+	.submit_button {
+	width: 200px;
+	}
+	}

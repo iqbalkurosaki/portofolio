@@ -1,0 +1,80 @@
+@font-face {
+	font-family: montserrat;
+	src: url('Montserrat-Regular.otf');
+}
+
+p {
+	text-align: left;
+}
+
+body {
+	margin: auto;
+}
+
+nav {
+	text-align: center;
+	display: inline;
+	background-color: white;
+	height: 60px;
+	width: 40%;
+	position: absolute;
+	
+}
+
+nav li {
+	margin-right: 50px;
+	display: inline-block;			
+}
+
+nav li a{
+	font-family: montserrat;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.logo {
+	width: 25%;
+	height: 25%;
+	display: inline;
+	margin-left: 20%;
+	float: left;
+}
+
+.footer {
+	color: white;
+	background-color: #474443;
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-family: montserrat;
+}
+
+@media only screen and (max-width: 375px){
+	.logo {
+	width: 60%;
+	height: 60%;
+	margin-left: 20%;
+	margin-top: 70%;
+	}	
+
+	nav {
+	text-align: center;
+	background-color: white;
+	height: 30px;
+	width: 100%;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	}
+
+	nav li a{
+	font-family: montserrat;
+	font-size: 9px;
+	color: black;
+	text-decoration: none;
+	}
+}

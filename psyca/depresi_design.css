@@ -1,0 +1,147 @@
+@font-face {
+  font-family: montserrat;
+  src: url('Montserrat-Regular.otf');
+}
+
+body {
+	margin: auto;
+}
+
+nav {
+	background-color: #474443;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-left: 20px;
+	float: left;
+	width: 20%;
+}
+
+label:before {
+  margin-left: 5px;
+  margin-top: 5px;
+  content: url("img/unchecked_checkbox.png");
+  position: absolute;
+  z-index: 100;
+}
+
+:checked+label:before {
+  content: url("img/checked_checkbox.png");
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label img {
+  width: 200px;
+  height: 200px;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.3s ease-in-out;  
+}
+
+:checked+label img {
+	box-shadow: 10px 10px 10px;
+	-webkit-transition: box-shadow 0.3s ease-in-out;  
+} 
+
+label {
+  margin: 10px;
+}
+
+input[type=submit]{
+	margin-left: 40%;
+	margin-bottom: 3%;
+	font-size: 20px;
+	color: white;
+	width: 20%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background : blue;
+	font-family: montserrat;
+}
+
+.kata {
+	margin-left: 32%;
+	margin-bottom: 3%;
+	font-size: 40px;
+	color: red;
+	font-family: montserrat;
+}
+
+.footer {
+  color: white;
+  background-color: #474443;
+  position: static;
+  height: 47px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  line-height: 47px;
+  font-family: montserrat;
+  position: fixed;
+  z-index: 100;
+}
+
+.menu_bar {
+  top: 5%;
+  text-decoration: none;
+  color:white;
+  position: absolute;
+  display: block;
+  font-family: montserrat;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 375px){
+  nav {
+    height: 50px;
+    position: fixed;
+    line-height: 50px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  table {
+    margin-left: -30px;    
+  }
+
+  label:before {
+  display: none;
+  }
+
+  label img {
+  margin-top: 28%;
+  width: 80px;
+  height: 80px;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.3s ease-in-out;  
+  }
+
+  .menu_bar {
+    margin-top: -10px;
+    font-size: 15px;
+    margin-right: 7%;
+  }
+
+  input[type=submit]{
+  align-self: center;
+  padding: 0 0 0 0;
+  font-size: 10px;
+  width: 17%;
+  }
+
+  .kata {
+  margin-left: 28%;
+  margin-bottom: 30%;
+  font-size: 15px;
+  color: red;
+  font-family: montserrat;
+  }
+}

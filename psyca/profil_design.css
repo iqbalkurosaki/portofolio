@@ -1,0 +1,114 @@
+@font-face {
+	font-family: montserrat;
+	src: url('Montserrat-Regular.otf');
+}
+
+body {
+	margin: auto;
+}
+
+nav {
+	background-color: #474443;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-left: 20px;
+	float: left;
+	width: 20%;
+}
+
+.box {
+	margin-left: 25%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-radius: 10px;
+	width: 50%;
+	height: 50%;
+	background-color: #f1f1f1;
+	box-shadow: 10px 10px 10px;
+	margin-top: 7%;
+}
+
+caption {
+	font-size: 50px;
+	font-family: montserrat;
+	border-bottom: 2px dashed black;
+}
+
+.kata {
+	font-size: 25px;
+	font-family: montserrat;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.kata2 {
+	font-size: 25px;
+	font-family: montserrat;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.footer {
+	color: white;
+	background-color: #474443;
+	position: fixed;
+	height: 50px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	font-family: montserrat;
+}
+
+.menu_bar {
+  top: 5%;
+  text-decoration: none;
+  color:white;
+  position: absolute;
+  display: block;
+  font-family: montserrat;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 375px){
+	nav {
+		height: 50px;
+	}
+
+	caption {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.box {
+		background-color: white;
+		border : none;
+		box-shadow: none;
+		width: auto;
+		margin: 20% 0px;
+	}
+
+
+	.kata {
+		font-size: 12px;
+		padding-bottom: 5px;
+	}
+
+	.kata2 {
+		font-size: 12px;
+	}
+
+	.menu_bar {
+      margin-top: -10px;
+	  font-size: 15px;
+	  margin-right: 22%;
+	}
+}
